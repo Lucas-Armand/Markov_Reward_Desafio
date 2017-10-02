@@ -60,17 +60,7 @@ solução. Tente calcular o lucro médio.
 # Resolução:
 
 Primeiramente, para facilitar a comprienção, acho que vale a pena realizar um exemplo. Por isso contruir uma trabela que apresenta três semanas (geradas arbitráriamente) e que apresentam as principais mecânicas que regem esse exercício. 
-DIA       | ESTOQUE | CLIENTES | PEDIDOS  
---------- | ------- | -------- | --------
-SEGUNDA   | 2 | 0 | 0
 
-DIA       | ESTOQUE  
---------- | ------- 
-SEGUNDA   | 2 
-
-DIA       | ESTOQUE | CLIENTES | PEDIDOS  
---------- | ------- | -------- | --------
-SEGUNDA   |   2     |     0    |    0
 
 
 DIA          | ESTOQUE | CLIENTES | PEDIDOS  
@@ -98,3 +88,4 @@ SÁBADO       |    0    |    0     |    0
 DOMIGO       |    0    |    0     |    0
 SEGUNDA      |    2    |    0     |    0
 
+A pesar do enuciado não deixar claro como funciona a dinamica da loja dia-a-dia (mas adotar como unidade de templo ciclos semanais), nesse exemplo todos os dias de três semanas (a partir da semana inicial) foram representados para facilitar a comprienção do leitor. Dessa meneira é possivel ver a cada dia o nível do estoque, o número de clientes e número de pedidos realizados.  
