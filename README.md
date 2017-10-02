@@ -22,23 +22,32 @@ com probabilidade p_1 (p_2 ) 1 (ou, respectivamente, 2) cliente(s) chega(m) para
 usa uma política simples de reposiçao: ele faz uma requisição de 2 produtos caso, no inicio da semana,
 o estoque esteja vazio. (Note que os 2 itens só são entregues no fim de semana, e não poderão ser
 usados para atender possíveis clientes na semana.)
+
+
 a) Desenhe a cadeia de Markov com o objetivo de determinar o número médio de produtos na
 prateleira no início de dada semana.
+
 b) Suponha que p_0 = 0.25, p_1 = 0.6 (logo p_2 = 0.15). Calcule o número médio de clientes que n ̃
 ao
 encontram A na prateleira.
+
 c) Suponha que o custo de A na fábrica seja de R$ 40.00, a loja ganha R$ 100.00 por item vendido
 e ainda que o custo de entrega seja de R$ 20.00 pelos 2 itens. Calcule o ganho esperado da loja
 por semana, se A é vendido a R$ 100.00,
 
 II - Seja a i a ação que indica solicitaçao de i produtos do tipo A. O gerente quer melhorar o seu ganho
 e para isso ele pensa na possibilidade de realizar as seguintes ações:
+
 • Caso o número de produtos na prateleira seja de igual a 1 no início da semana, ele pode tomar
 as ações a 0 ou a 1 .
+
 • Caso o número de produtos na prateleira seja de igual a 0, ele pode tomar as ações a 1 ou a 2 .
 Suponha ainda que o custo de entrega de 1 item apenas seja de R$ 15.00, e de 2 itens continue sendo
 de R$ 20.00.
+
+
 d) Escolha as ações que maximizam o ganho médio da loja por semana, a longo prazo.
+
 e) Suponha que, na primeira semana de funcionamento da loja após um período de recesso, a loja
 esteja com apenas 1 item na prateleira no início da semana. Pense em como escolher a sequˆencia
 de ações a tomar a cada semana para maximizar o lucro médio total nas 3 primeiras semanas
