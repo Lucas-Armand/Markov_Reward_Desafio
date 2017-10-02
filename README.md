@@ -38,13 +38,13 @@ por semana, se A é vendido a R$ 100.00,
 
 
 
-II - Seja a i a ação que indica solicitaçao de i produtos do tipo A. O gerente quer melhorar o seu ganho
+II - Seja "a_i" a ação que indica solicitaçao de i produtos do tipo A. O gerente quer melhorar o seu ganho
 e para isso ele pensa na possibilidade de realizar as seguintes ações:
 
 • Caso o número de produtos na prateleira seja de igual a 1 no início da semana, ele pode tomar
-as ações a 0 ou a 1 .
+as ações a_0 ou a_1 .
 
-• Caso o número de produtos na prateleira seja de igual a 0, ele pode tomar as ações a 1 ou a 2 .
+• Caso o número de produtos na prateleira seja de igual a 0, ele pode tomar as ações a_1 ou a_2 .
 Suponha ainda que o custo de entrega de 1 item apenas seja de R$ 15.00, e de 2 itens continue sendo
 de R$ 20.00.
 
