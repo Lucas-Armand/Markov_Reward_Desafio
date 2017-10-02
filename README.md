@@ -56,3 +56,12 @@ esteja com apenas 1 item na prateleira no início da semana. Pense em como escol
 de ações a tomar a cada semana para maximizar o lucro médio total nas 3 primeiras semanas
 de funcionamento. Tente formalizar o problema e explique o que pode ser feito para chegar a
 solução. Tente calcular o lucro médio.
+
+# Resolução:
+
+Alimentos | Preço
+--------- | ------
+Arroz     | R$ 10
+Feijão    | R$ 8
+Batata    | R$ 7
+Macarrão  | R$ 8
