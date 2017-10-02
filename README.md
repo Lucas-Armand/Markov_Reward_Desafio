@@ -35,6 +35,9 @@ c) Suponha que o custo de A na fábrica seja de R$ 40.00, a loja ganha R$ 100.00
 e ainda que o custo de entrega seja de R$ 20.00 pelos 2 itens. Calcule o ganho esperado da loja
 por semana, se A é vendido a R$ 100.00,
 
+
+
+
 II - Seja a i a ação que indica solicitaçao de i produtos do tipo A. O gerente quer melhorar o seu ganho
 e para isso ele pensa na possibilidade de realizar as seguintes ações:
 
