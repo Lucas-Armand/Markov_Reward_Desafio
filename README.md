@@ -71,3 +71,30 @@ SEGUNDA   | 2
 DIA       | ESTOQUE | CLIENTES | PEDIDOS  
 --------- | ------- | -------- | --------
 SEGUNDA   |   2     |     0    |    0
+
+
+DIA          | ESTOQUE | CLIENTES | PEDIDOS  
+---------    | ------- | -------- | --------
+SEGUNDA      |    2    |    0     |    0
+TERÇA        |    2    |    0     |    0
+QUARTA       |    2    |    0     |    0
+QUINTA       |    1    |    1     |    0
+SEXTA        |    1    |    0     |    0
+SÁBADO       |    1    |    0     |    0
+DOMIGO       |    1    |    0     |    0
+SEGUNDA      |    1    |    0     |    0
+TERÇA        |    1    |    0     |    0
+QUARTA       |    0    |    1     |    0
+QUINTA       |    0    |    0     |    0
+SEXTA        |    0    |    0     |    0
+SÁBADO       |    0    |    0     |    0
+DOMIGO       |    0    |    0     |    0
+SEGUNDA      |    0    |    0     |    2
+TERÇA        |    0    |    0     |    0
+QUARTA       |    0    |    0     |    0
+QUINTA       |    0    |    0     |    0
+SEXTA        |    0    |    2     |    0
+SÁBADO       |    0    |    0     |    0
+DOMIGO       |    0    |    0     |    0
+SEGUNDA      |    2    |    0     |    0
+
