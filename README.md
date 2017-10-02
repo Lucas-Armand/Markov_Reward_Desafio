@@ -59,9 +59,29 @@ solução. Tente calcular o lucro médio.
 
 # Resolução:
 
-Alimentos | Preço
---------- | ------
-Arroz     | R$ 10
-Feijão    | R$ 8
-Batata    | R$ 7
-Macarrão  | R$ 8
+Primeiramente, para facilitar a comprienção, acho que vale a pena realizar um exemplo. Por isso contruir uma trabela que apresenta três semanas (geradas arbitráriamente) e que apresentam as principais mecânicas que regem esse exercício. 
+DIA       | ESTOQUE | CLIENTES | PEDIDOS | 
+--------- | ------- | -------- | --------
+SEGUNDA   | 2 | 0 | 0 |
+TERÇA     | 2 | 0 | 0 |
+QUARTA    | 2 | 0 | 0 |
+QUINTA    | 1 | 1 | 0 |
+SEXTA     | 1 | 0 | 0 |
+SÁBADO    | 1 | 0 | 0 |
+DOMIGO    | 1 | 0 | 0 |
+SEGUNDA   | 1 | 0 | 0 |
+TERÇA     | 1 | 0 | 0 |
+QUARTA    | 0 | 1 | 0 |
+QUINTA    | 0 | 0 | 0 |
+SEXTA     | 0 | 0 | 0 |
+SÁBADO    | 0 | 0 | 0 |
+DOMIGO    | 0 | 0 | 0 |
+SEGUNDA   | 0 | 0 | 2 |
+TERÇA     | 0 | 0 | 0 |
+QUARTA    | 0 | 0 | 0 |
+QUINTA    | 0 | 0 | 0 |
+SEXTA     | 0 | 2 | 0 |
+SÁBADO    | 0 | 0 | 0 |
+DOMIGO    | 0 | 0 | 0 |
+SEGUNDA   | 2 | 0 | 0 |
+
