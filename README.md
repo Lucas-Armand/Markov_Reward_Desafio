@@ -88,4 +88,19 @@ SÁBADO       |    0    |    0     |    0
 DOMIGO       |    0    |    0     |    0
 SEGUNDA      |    2    |    0     |    0
 
-A pesar do enuciado não deixar claro como funciona a dinamica da loja dia-a-dia (mas adotar como unidade de templo ciclos semanais), nesse exemplo todos os dias de três semanas (a partir da semana inicial) foram representados para facilitar a comprienção do leitor. Dessa meneira é possivel ver a cada dia o nível do estoque, o número de clientes e número de pedidos realizados.  
+A pesar do enuciado não deixar claro como funciona a dinamica da loja dia-a-dia (por adotar como unidade de templo ciclos semanais), nesse exemplo todos os dias de três semanas (a partir da data inicial) foram representados para facilitar a comprienção do leitor. Dessa meneira é possivel ver a cada dia o nível do estoque, o número de clientes e número de pedidos realizados. No exemplo acima, o nivel de estoque inicial era de duas unidades do produto "A". Durante a primeira semana uma unidade foi comprada, durante a segunda semana outra unidade foi comprada, de maneira que no início da terceira semana o estoque chegou a zero e o gerente fez o pedido de mais duas unidades. Na terceira semana dois novos clientes vieram a loja, mas não puderem comprar nada por que não havia estoque. Por fim, na ultima segunda feira represetada chegaram as duas unidades encomendadas uma semana antes. A tabela a seguir resume todo o exemplo mostrando o resultado semana a semana:
+
+
+SEMANA       | ESTOQUE | CLIENTES | PEDIDOS  
+---------    | ------- | -------- | --------
+S1           |    2    |    1     |    0
+S2           |    1    |    1     |    0
+S3           |    0    |    2     |    2
+S4 (SEGUNDA) |    2    |    0     |    0
+
+
+Essa representação, mesmo sendo mais compacta, pode gerar confunções por aglutinar numa mesma linha resultados que não ocorrem simultaneamente. De toda maneira, esse exemplo apresenta as principais caracteristicas do problema.
+
+
+Uma vez familirizados com o problema podemos propor um modelo de rede de markov que capture a natureza da situação, a imagem a seguir apresenta o modelo proposto:
+
