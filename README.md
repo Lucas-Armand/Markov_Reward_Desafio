@@ -103,10 +103,11 @@ S4 (SEGUNDA) |    2    |    0     |    0
 
 Essa representação, mesmo sendo mais compacta, pode gerar confunções por aglutinar numa mesma linha resultados que não ocorrem simultaneamente. De toda maneira, esse exemplo apresenta as principais caracteristicas do problema.
 
+### Modelagem
 
 Uma vez familirizados com o problema podemos propor um modelo de rede de markov que capture a natureza da situação, a imagem a seguir apresenta o modelo proposto:
 
 
-![Rede de transição de estados de Markov](https://github.com/Lucas-Armand/machine_learning_CPS863/blob/master/matrix.png)
+![Rede de transição de estados de Markov](https://github.com/Lucas-Armand/machine_learning_CPS863/blob/master/network.png)
 
 No modelo do problema apresentado acima o sistema é descrito como se caminhando entre seis estados de forma probabilisticas
