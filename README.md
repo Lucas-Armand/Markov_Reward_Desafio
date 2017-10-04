@@ -110,4 +110,10 @@ Uma vez familirizados com o problema podemos propor um modelo de rede de markov 
 
 ![Rede de transição de estados de Markov](https://github.com/Lucas-Armand/machine_learning_CPS863/blob/master/network.png)
 
-No modelo do problema apresentado acima o sistema é descrito como se caminhando entre seis estados de forma probabilisticas
+No modelo do problema apresentado descreve o sistema como se ele variasse entre seis estados de forma probabilisticas. Cada estado é definido por dois valores: Primeiramente o número de elementos no sistema no início daquela semana e segundamente o número de clientes não atendidos durante aquela semana. Na notação escolhida, caso o nenhum cliente tenha ficado sem atendido o segundo número pode ser omitido (ou seja não se escreve o segundo número da notação "zero", por que "zero" clientes deixaram de ser atendidos por falta de estoque). 
+
+Estados propostos:
+
+* (2,0) ou (2): Estado aonde a semana é iniciada com "2" itens no estoque e durante a semana nenhum cliente ("0") foi perdido. Varia com probalidade p0 para ele mesmo, com probabilidade p1 para o estado (1) e com probabilidade (0).
+
+* (1,0) ou (1):
