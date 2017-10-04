@@ -110,10 +110,14 @@ Uma vez familirizados com o problema podemos propor um modelo de rede de markov 
 
 ![Rede de transição de estados de Markov](https://github.com/Lucas-Armand/machine_learning_CPS863/blob/master/network.png)
 
-No modelo do problema apresentado descreve o sistema como se ele variasse entre seis estados de forma probabilisticas. Cada estado é definido por dois valores: Primeiramente o número de elementos no sistema no início daquela semana e segundamente o número de clientes não atendidos durante aquela semana. Na notação escolhida, caso o nenhum cliente tenha ficado sem atendido o segundo número pode ser omitido (ou seja não se escreve o segundo número da notação "zero", por que "zero" clientes deixaram de ser atendidos por falta de estoque). 
+No modelo do problema apresentado descreve o sistema como se ele variasse entre seis estados de forma probabilisticas. Cada estado é definido por dois valores: Primeiramente o número de elementos no sistema no início daquela semana e segundamente o número de clientes não atendidos durante a semana anterior. Na notação escolhida, caso o nenhum cliente tenha ficado sem atendido o segundo número pode ser omitido (ou seja não se escreve o segundo número da notação "zero", por que "zero" clientes deixaram de ser atendidos por falta de estoque). 
 
 Estados propostos:
 
-* (2,0) ou (2): Estado aonde a semana é iniciada com "2" itens no estoque e durante a semana nenhum cliente ("0") foi perdido. Varia com probalidade p0 para ele mesmo, com probabilidade p1 para o estado (1) e com probabilidade (0).
+* (2,0) ou (2): Estado aonde a semana é iniciada com "2" itens no estoque e durante a semana anterior nenhum cliente ("0") foi perdido. Varia com probalidade p0 para ele mesmo (2), com probabilidade p1 para o estado (1) e com probabilidade p2 (0).
 
-* (1,0) ou (1):
+* (1,0) ou (1): Estado aonde a semana é iniciada com "1" itens no estoque e durante a semana anterior nenhum cliente ("0") foi perdido. Varia com probalidade p0 para ele mesmo (1), com probabilidade p1 para o estado (0) e com probabilidade p2 (0,-1).
+
+* (0,0) ou (0): Estado aonde a semana é iniciada com "0" itens no estoque e durante a semana anterior nenhum cliente ("0") foi perdido. Varia com probalidade p0 para o estado (2,0), com probabilidade p1 para o estado (2,-1) e com probabilidade p2 (2,-2).
+
+* (0,-1) ou (0): Estado aonde a semana é iniciada com "0" itens no estoque e durante a semana anterior nenhum cliente ("0") foi perdido. Varia com probalidade p0 para o estado (2,0), com probabilidade p1 para o estado (2,-1) e com probabilidade p2 (2,-2).
