@@ -1,9 +1,7 @@
 # Machine Learning CPS863
 Resoluções de desafios propostos na matéria propostos na matéria "Machine Learning" (CPS 863) 2017.3, UFRJ - PESC, pelos professores Edmundo de Souza e Silva e Rosa Leão.
 
-## Markov Reward
-
-Desafio:
+## Markov Reward - Desafio:
 
 I - Uma loja mantém um estoque de um determinado produto A para venda. Suponha (para manter o
 problema com pequeno tamanho para ser fácil a solução manual) que a loja aloca espaço para que, no
@@ -57,7 +55,11 @@ de ações a tomar a cada semana para maximizar o lucro médio total nas 3 prime
 de funcionamento. Tente formalizar o problema e explique o que pode ser feito para chegar a
 solução. Tente calcular o lucro médio.
 
-# Resolução:
+## Resolução:
+
+Inicialmente será apresentado um exemplo do funcionamento do sistema.
+
+### Exemplo
 
 Primeiramente, para facilitar a comprienção, acho que vale a pena realizar um exemplo. Por isso contruir uma trabela que apresenta três semanas (geradas arbitráriamente) e que apresentam as principais mecânicas que regem esse exercício. 
 
