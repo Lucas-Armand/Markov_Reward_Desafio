@@ -1,7 +1,7 @@
 # Machine Learning CPS863
 Resoluções de desafios propostos na matéria propostos na matéria "Machine Learning" (CPS 863) 2017.3, UFRJ - PESC, pelos professores Edmundo de Souza e Silva e Rosa Leão.
 
-# Markov Reward
+## Markov Reward
 
 Desafio:
 
@@ -104,3 +104,7 @@ Essa representação, mesmo sendo mais compacta, pode gerar confunções por agl
 
 Uma vez familirizados com o problema podemos propor um modelo de rede de markov que capture a natureza da situação, a imagem a seguir apresenta o modelo proposto:
 
+
+![Rede de transição de estados de Markov](https://github.com/Lucas-Armand/machine_learning_CPS863/blob/master/matrix.png)
+
+No modelo do problema apresentado acima o sistema é descrito como se caminhando entre seis estados de forma probabilisticas
