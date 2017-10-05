@@ -1,4 +1,4 @@
-# Machine Learning CPS863
+c# Machine Learning CPS863
 Resoluções de desafios propostos na matéria propostos na matéria "Machine Learning" (CPS 863) 2017.3, UFRJ - PESC, pelos professores Edmundo de Souza e Silva e Rosa Leão.
 
 ## Markov Reward - Desafio:
@@ -25,9 +25,7 @@ usados para atender possíveis clientes na semana.)
 a) Desenhe a cadeia de Markov com o objetivo de determinar o número médio de produtos na
 prateleira no início de dada semana.
 
-b) Suponha que p_0 = 0.25, p_1 = 0.6 (logo p_2 = 0.15). Calcule o número médio de clientes que n ̃
-ao
-encontram A na prateleira.
+b) Suponha que p_0 = 0.25, p_1 = 0.6 (logo p_2 = 0.15). Calcule o número médio de clientes que não encontram A na prateleira.
 
 c) Suponha que o custo de A na fábrica seja de R$ 40.00, a loja ganha R$ 100.00 por item vendido
 e ainda que o custo de entrega seja de R$ 20.00 pelos 2 itens. Calcule o ganho esperado da loja
@@ -116,8 +114,32 @@ Estados propostos:
 
 * (2,0) ou (2): Estado aonde a semana é iniciada com "2" itens no estoque e durante a semana anterior nenhum cliente ("0") foi perdido. Varia com probalidade p0 para ele mesmo (2), com probabilidade p1 para o estado (1) e com probabilidade p2 (0).
 
-* (1,0) ou (1): Estado aonde a semana é iniciada com "1" itens no estoque e durante a semana anterior nenhum cliente ("0") foi perdido. Varia com probalidade p0 para ele mesmo (1), com probabilidade p1 para o estado (0) e com probabilidade p2 (0,-1).
+* (1,0) ou (1): Estado aonde a semana é iniciada com "1" item no estoque e durante a semana anterior nenhum cliente ("0") foi perdido. Varia com probalidade p0 para ele mesmo (1), com probabilidade p1 para o estado (0) e com probabilidade p2 (0,-1).
 
-* (0,0) ou (0): Estado aonde a semana é iniciada com "0" itens no estoque e durante a semana anterior nenhum cliente ("0") foi perdido. Varia com probalidade p0 para o estado (2,0), com probabilidade p1 para o estado (2,-1) e com probabilidade p2 (2,-2).
+* (0,0) ou (0): Estado aonde a semana é iniciada com "0" item no estoque e durante a semana anterior nenhum cliente ("0") foi perdido. Varia com probalidade p0 para o estado (2,0), com probabilidade p1 para o estado (2,-1) e com probabilidade p2 (2,-2).
 
-* (0,-1) ou (0): Estado aonde a semana é iniciada com "0" itens no estoque e durante a semana anterior nenhum cliente ("0") foi perdido. Varia com probalidade p0 para o estado (2,0), com probabilidade p1 para o estado (2,-1) e com probabilidade p2 (2,-2).
+* (0,-1): Estado aonde a semana é iniciada com "0" item no estoque e durante a semana anterior "1" cliente foi perdido. Varia com probalidade p0 para o estado (2,0), com probabilidade p1 para o estado (2,-1) e com probabilidade p2 (1,0).
+
+* (2,-1): Estado aonde a semana é iniciada com "2" itens no estoque e durante a semana anterior "1" cliente foi perdido. Varia com probalidade p0 para o estado (2,0), com probabilidade p1 para o estado (1,0) e com probabilidade p2 (1,0).
+
+* (2,-2): Estado aonde a semana é iniciada com "2" itens no estoque e durante a semana anterior "2" cliente foram perdido. Varia com probalidade p0 para o estado (2,0), com probabilidade p1 para o estado (1,0) e com probabilidade p2 (1,0).
+
+De maneira que a matriz de transição de estados para essa rede de markov pode ser escrita como:
+
+![Matriz de correlação da Rede de Markov](https://github.com/Lucas-Armand/machine_learning_CPS863/blob/master/matrix.png)
+
+
+### Solução dos problemas 
+
+b) Probabilidade dos estados:
+Matrix(
+[[0.171568627450980], 
+[0.313725490196079], 
+[0.247058823529412], 
+[0.0470588235294118], 
+[0.176470588235294], 
+[0.0441176470588236]])
+
+O número médio de clientes que não são atendidos é de:
+0.311764705882353
+
