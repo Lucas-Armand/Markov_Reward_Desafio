@@ -130,8 +130,37 @@ De maneira que a matriz de transição de estados para essa rede de markov pode 
 
 
 ### Solução dos problemas 
+Entrada dos valores da probabiliadedes
+p0, p1, p2  = 0.25, 0.6, 0.15
 
-b) Probabilidade dos estados:
+a)
+Assim, em relação ao modelo proposto a matriz de transição é :
+⎡0.25   0    0.25  0.25  0.25  0.25⎤
+⎢0.6   0.25   0     0    0.6   0.6 ⎥
+⎢0.15  0.6    0     0    0.15  0.15⎥
+⎢ 0    0.15   0     0     0     0  ⎥
+⎢ 0     0    0.6   0.6    0     0  ⎥
+⎣ 0     0    0.15  0.15   0     0  ⎦
+
+b)
+# Sobre o vetor de estado do regime permanete pode se afirmar que:
+#
+# M*x=x
+#
+# Aonde "M" é a matriz de transição, assim podemos fazer escrever:
+#
+# M*x = x
+# M*x - x = 0
+# M*x - I*x = 0
+# (M - I)*x = 0
+# A*x = 0 = b
+#
+# Aonde "I" é matriz identidade.
+# E "A" e "b" são nomes arbitrários, de maneira que com esse algebrimos
+# escrevemos o problema "M*x = x" como "A*x = b" e assim se torna mais
+# facil a resolução:
+
+A probabilidade dos estados:
 Matrix(
 [[0.171568627450980], 
 [0.313725490196079], 
@@ -140,6 +169,46 @@ Matrix(
 [0.176470588235294], 
 [0.0441176470588236]])
 
+Assim podemos calcular :
+
+# N_semAtendimento = P(x = (0,-1))*1 + P(x = (2,-1))*1 + P(x = (2,-2))*2
+
+Por fim:
+
 O número médio de clientes que não são atendidos é de:
 0.311764705882353
+
+c) 
+Para resolver o proximo problema é necessário defenir uma matrix de conversão.
+A matrix de conversão do estado para a o prababilidade de vendas:
+⎡0.15   0    0  0  0.15  0.15⎤
+⎢0.6   0.75  0  0  0.6   0.6 ⎥
+⎣ 0     0    1  1   0     0  ⎦
+
+
+A probabilidade de comprar e vender é:
+
+                                 Probabilidade
+Probabilidade de vender 2   0.0588235294117647
+Probabilidade de vender 1    0.470588235294118
+Probabilidade de comprar 2   0.294117647058824
+
+
+ O ganho de cada decição:
+                    Ganho
+Ganho de vender 2     200
+Ganho de vender 1     100
+Ganho de comprar 2   -100
+
+Assim, o lucro médio por semana é de:
+29.4117647058824
+
+	Parte II:
+Primeiramente acredito que cabe aqui uma análise sobre os efeitos que dominam a dinámica do problema. Esse é um problema de maxímização de lucro, em qualquer problema só existe duas maneiras de aumentar o lucro: Aumentando os ganhos ou diminuindo os custos. Dentro do problema proposto o a única maneira de aumentar o lucro é reduzindo o número de vezes que um comprador chega a loja e não existe nada para comprar, ou seja, existe um lucro em potencial perdido toda vez que uma compra não é realizada. A redução de custos pode ser pensado em cima do custo médio da unidade, e está realicionado ao número de pedidos indivíduias realizados. No problema proposto o único fator que afeta o custo da unídade é se eu encomendo duas ou uma unidade de cada vez, assim, focando somente esse aspecto, o ideal seria sempre encomendar duas unidades ao mesmo tempo. É claro que existe outros fatores a serem considerados, como, por exemplo, o tamanho médio do estoque residual por semana, essa quantidade representa as unidades não vendidas em médias por semana, ou seja, unidades que não produziram lucro, porem como as unidades não tem validade e estamos trabalhando no estado estacionário
+
+Para estratégia E=0 => a2 + E=1 => a1:
+lucro = 34.6478873239437
+
+Para estratégia E=0 => a1 + E=1 => a1:
+lucro = 34.1566265060241
 
